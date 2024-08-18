@@ -620,7 +620,7 @@ img {
     border-radius: 4px; 
     color: #ffffff;
 }
-.E-mail {
+.e-mail {
     color: #ffffff;
 }
 .subscribe-btn {
@@ -665,11 +665,11 @@ img {
     transform: translate(-50%, -50%);
     width: 408px;
     border-radius: 4px;
-    padding: 40px;
     min-height: 584px;
     background: #fcfcfc;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 72px 24px 24px 24px;
 }
 .backdrop.is-open {
     visibility: visible;
@@ -700,6 +700,7 @@ img {
 .modal-close-btn:focus {
     background-color: #404BBF ;
     border: none;
+    fill: #ffffff;
 } 
 .modal-text {
     line-height: 1.5;
@@ -808,11 +809,13 @@ position: relative;
     width:16px;
     height:16px;
     border-radius:2px;
-    border: 1px solid rgba(17, 17, 17, 0.14);
     display: inline-flex;
     justify-content: center;
     align-items: center;
     margin-right: 12px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .custom-label-user-checkbox {
     cursor: pointer;
