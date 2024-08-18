@@ -640,6 +640,9 @@ img {
     border: none;
     border-radius: 4px;
 }
+.send { 
+    margin-left: 16px;
+}
 /* Modal */
 .backdrop {
     position: fixed;
