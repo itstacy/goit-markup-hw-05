@@ -1,0 +1,772 @@
+body { 
+    font-family: "Roboto", sans-serif;
+    color: #434455;
+    background-color: #FFFFFF;
+}
+
+ul,ol { 
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+h1,h2,h3,h4,h5,h6 p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+a { 
+    text-decoration: none;
+}
+img {
+    display: block;
+}
+/* #region Header */
+/* Стиль для хедера */
+/* Стиль для хедера */
+.header {
+    border-bottom: 1px solid #e7e9fc;
+    box-shadow: 
+        0px 2px 1px rgba(46, 47, 66, 0.08),   /* Перша тінь */
+        0px 1px 1px rgba(46, 47, 66, 0.16),   /* Друга тінь */
+        0px 1px 6px rgba(46, 47, 66, 0.08);   /* Третя тінь */
+}
+
+/* Стиль для контейнера хедера */
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e7e9fc;
+    margin: 0 auto;
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Стиль для навігаційного блоку */
+.nav-header {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+/* Стиль для логотипу */
+.logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    margin-right: 76px;
+}
+
+.logo-span {
+    color: #2e2f42;
+}
+
+/* Стилі для меню в навігації */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.menu-item {
+    margin-right: 40px; /* Відступ між пунктами меню */
+}
+
+/* Псевдоелемент для підкреслення під першим пунктом меню */
+.menu-item:first-child .menu-link {
+    position: relative; /* Позиціонування відносно батьківського елемента */
+    color: #404bbf; /* Колір тексту */
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавна зміна кольору */
+}
+
+.menu-item:first-child .menu-link::after {
+    content: ''; /* Встановлює вміст псевдоелемента як порожній рядок */
+    position: absolute; /* Позиціювання відносно батьківського елемента */
+    left: 0; /* Відстань від лівого краю */
+    bottom: -1px; /* Відстань від нижнього краю */
+    width: 100%; /* Ширина підкреслення */
+    height: 4px; /* Висота підкреслення */
+    background-color: #404bbf; /* Колір фону підкреслення */
+    border-radius: 2px; /* Закруглення кутів */
+}
+
+/* Показувати підкреслення при наведенні для першого пункту меню */
+.menu-item:first-child .menu-link:hover::after,
+.menu-item:first-child .menu-link:focus::after {
+    transform: scaleX(1); /* Показати підкреслення */
+}
+
+/* Загальний стиль для меню посилань */
+.menu-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    text-decoration: none; /* Видалення підкреслення */
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.menu-link:hover,
+.menu-link:focus {
+    color: #404bbf; /* Колір при наведенні */
+}
+
+/* Стилі для address в хедері */
+.address {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.address-link {
+    display: flex;
+    gap: 40px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.address-link .contact-link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавна зміна кольору */
+}
+
+.contact-link {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #434455;
+    text-decoration: none; /* Видалення підкреслення */
+    margin-right: 40px;
+    display: flex;
+}
+
+.contact-link:last-child {
+    margin-right: 0; /* Обнулення відступу для останнього пункту */
+}
+
+.contact-link:hover,
+.contact-link:focus {
+    color: #404bbf; /* Колір при наведенні */
+}
+
+/* #endregion Header */
+
+/* #region Hero */
+.hero {
+    background-color: #2E2F42;
+    height: 600px;
+    padding: 188px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.jpg);
+    background-size: 1440px 600px;
+    background-repeat: no-repeat;
+    max-width: 1440px;
+    background-size: cover;
+    background-position: center;
+    margin: 0 auto;
+}
+.container-hero {
+    padding-top: 188px;
+    padding-bottom: 292px;
+    padding-left: 472px;
+    padding-right: 472px;
+}
+.hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 496px;
+    max-height: 120px;
+}
+.hero-btn { 
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #4D5AE5;
+    cursor: pointer;
+    min-width: 169px;
+    min-height: 56px;
+    margin-top: 48px;
+    padding: 16px 32px 16px 32px;
+    border: none;
+    border-radius: 4px;
+    display: block; /* Додаємо display: block для центрування */
+    margin-left: auto; /* Центруємо кнопку */
+    margin-right: auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-btn:hover,
+.hero-btn:focus {
+    color: #FFFFFF;
+    background-color: #404BBF;
+    ;
+}
+.second-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.container {
+    margin-left: 156px;
+    width: 1158px;
+    margin-top: 0 auto;
+    padding: 0 15px;
+}
+.list {
+    display: flex;
+    gap: 24px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.list-item {
+    width: calc((100% - 72px)/4);
+}
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    border: 1px solid #8e8f99;
+    margin-bottom: 8px;
+}
+.second-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    background-color: #FFFFFF;
+    margin-bottom: 8px;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+.small-text {
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+/* Секція команди */
+.third-section {
+    background-color: #F4F4FD;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+/* Заголовок секції */
+.third-title {
+    font-weight: 700;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    font-size: 36px;
+    color: #2E2F42;
+    margin-bottom: 72px;
+}
+
+/* Контейнер для списку команди */
+.our-team-ul {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Карточка члена команди */
+.team-member-one {
+    background-color: #FFFFFF;
+    width: calc((100% - 72px) / 4);
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+                0px 1px 1px rgba(46, 47, 66, 0.16), 
+                0px 2px 1px rgba(46, 47, 66, 0.08);
+    overflow: hidden;
+}
+
+/* Опис члена команди */
+.team-box {
+    padding: 32px 0;
+    text-align: center;
+}
+
+/* Ім'я члена команди */
+.person {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+/* Опис посади або ролі */
+.descr {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+
+/* Список соцмереж */
+.social-links-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Окремий пункт списку соцмереж */
+.social-link-item {
+    width: 40px;
+    height: 40px;
+}
+
+/* Стиль для посилання соцмереж */
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-bg-color, #4d5ae5);
+    border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Hover і focus для посилання */
+.social-link:focus,
+.social-link:hover {
+    background-color: #404bbf !important;
+}
+
+/* Стиль для SVG іконки всередині посилання */
+.social-link svg {
+    width: 16px;
+    height: 16px;
+    fill: #f4f4fd;
+}
+
+/* Стиль для списку у другій, третій та четвертій картках */
+.team-member-two .social-links-list,
+.team-member-three .social-links-list,
+.team-member-four .social-links-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+/* Основні стилі для секції портфоліо */
+.portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.section-title {
+    line-height: 1.11;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    font-size: 36px;
+    color: #2E2F42;
+    margin-bottom: 72px;
+}
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+    list-style: none; /* Вимкнути маркери списку */
+    padding: 0; /* Внутрішні відступи списку */
+    margin: 0; /* Зовнішні відступи списку */
+}
+.portfolio-item:nth-child(1) {
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавна поява тіні */
+}
+.portfolio-item {
+    width: calc((100% - 48px) / 3); /* Розрахунок ширини для кожного елемента */
+    border: 1px solid #ddd; /* Легка межа навколо зображення */ 
+    overflow: hidden; /* Приховати частини елемента, що виходять за межі */
+    background-color: #fff; /* Білий фон */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легка тінь для підняття */
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+                transform 0.3s ease;
+    position: relative; /* Необхідно для псевдоелементів */
+}
+
+.portfolio-item:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+                0px 1px 1px rgba(46, 47, 66, 0.16), 
+                0px 2px 1px rgba(46, 47, 66, 0.08) !important; /* Тінь при ховері */
+}
+
+/* Контейнер для зображення */
+.image-container {
+    position: relative; /* Встановлення позиціонування */
+    overflow: hidden; /* Приховування частин, що виходять за межі */
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Параграф для фону і тексту при ховері */
+.overlay-text {
+    content: "14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App";
+    background-color: #4D5AE5; /* Задаем фон нужного цвета */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; /* Изначально делаем невидимым */
+    transition: opacity 250ms ease-in-out, transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #f4f4fd; /* Цвет текста */
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding: 40px 32px;
+    box-sizing: border-box;
+    transform: translateY(100%); /* Исходное положение текста */
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Эффект при наведении */
+.portfolio-item:hover .overlay-text {
+    opacity: 1; /* При наведении делаем видимым */
+    transform: translateY(0%); /* Позиция текста при наведении */
+}
+
+.info-box {
+    padding: 32px 16px;
+    border: 1px solid #E7E9FC;
+    border-top: none;
+}
+
+.item-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+.item-category {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+}
+
+/* #region Footer */
+/* Основной стиль футера */
+.footer {
+    background-color: #2e2f42; /* Темный фон футера */
+    padding-top: 100px; /* Отступ сверху */
+    padding-bottom: 100px; /* Отступ снизу */
+}
+
+/* Контейнер футера */
+.footer-container {
+    display: flex; /* Размещение элементов по горизонтали */
+    align-items: baseline; /* Выровнять элементы по базовой линии */
+    flex-wrap: wrap; /* Перенос элементов на новую строку, если необходимо */
+}
+
+/* Информация футера */
+.footer-info {
+    margin-right: 120px; /* Отступ справа для разделения элементов */
+}
+
+/* Логотип футера */
+.logo-footer {
+    font-family: "Raleway", sans-serif; /* Шрифт логотипа */
+    font-weight: 700; /* Толщина шрифта */
+    font-size: 18px; /* Размер шрифта */
+    line-height: 1.17; /* Межстрочный интервал */
+    letter-spacing: 0.03em; /* Расширение между буквами */
+    text-transform: uppercase; /* Верхний регистр для всех букв */
+    color: #4d5ae5; /* Цвет текста */
+    display: inline-block; /* Блочный элемент для возможности центрирования */
+    margin-bottom: 16px ;
+}
+
+/* Часть логотипа */
+.studio-footer {
+    color: #f4f4fd; /* Цвет текста */
+}
+
+/* Описание футера */
+.footer-description {
+    line-height: 1.5; /* Межстрочний інтервал */
+    color: #F4F4FD; /* Колір тексту */
+    letter-spacing: 0.02em; /* Відстань між буквами */
+    max-width: 264px; /* Ширина тексту для зручності читання */
+}
+
+/* Контейнер социальных медиа */
+.social-media-container {
+    flex-direction: column; /* Вертикальное размещение дочерних элементов */
+    align-items: flex-end; /* Выравнивание по правому краю */
+}
+
+/* Заголовок социальных медиа */
+.social-media-title {
+    font-weight: 500; /* Жирность шрифта */
+    font-size: 16px; /* Размер шрифта */
+    line-height: 1.5; /* Межстрочный интервал */
+    letter-spacing: 0.02em; /* Расширение между буквами */
+    color: var(--text-color, #FFFFFF); /* Цвет текста через CSS переменную */
+    margin-bottom: 16px; /* Отступ снизу */}
+    p{
+        margin: 0;}
+
+/* Список социальных медиа */
+.social-media-list {
+    display: flex; /* Размещение элементов по горизонтали */
+    gap: 16px; /* Расстояние между элементами списка */
+}
+/* Элемент списка социальных медиа */
+.social-media-item {
+    width: 40px; /* Ширина элемента */
+    height: 40px; /* Высота элемента */
+}
+
+/* Ссылка на социальные медиа */
+.social-media-link {
+    width: 100%; /* Ширина ссылки */
+    height: 100%; /* Высота ссылки */
+    background-color: var(--bg-color, #4d5ae5); /* Цвет фона через CSS переменную */
+    border-radius: 50%; /* Круглые углы */
+    display: flex; /* Размещение дочерних элементов */
+    align-items: center; /* Выравнивание иконки по вертикали */
+    justify-content: center; /* Выравнивание иконки по горизонтали */
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* Плавное изменение цвета фона */
+}
+
+/* Стили при наведении на ссылки социальных медиа */
+.social-media-link:focus,
+.social-media-link:hover {
+    background-color: #31d0aa ; /* Цвет фона при наведении и фокусе */
+}
+
+/* Иконки социальных медиа */
+.social-icon {
+    fill: var(--icon-color, #f4f4fd); /* Цвет иконок через CSS переменную */
+}
+/* Modal */
+.backdrop {
+    position: fixed;
+    top: 0;
+    z-index: 9999999;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(46, 47, 66, 0.4);
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: visibility 300s linear,
+    opacity 300s linear,
+    pointer-events 300s linear;
+} 
+.modal { 
+    position: absolute;
+    top: 80px;
+    left: 516px;
+    height: 584px;
+    width: 408px;
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    padding: 40px;
+
+}
+.backdrop.is-open {
+    visibility: visible;
+    pointer-events: auto;
+    opacity: 1;
+} 
+.modal-close-btn {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    stroke: #2E2F42;
+    background-color: #E7E9FC ;
+    width: 28px;
+    height: 28px;
+    line-height: 0;
+    padding: 0;
+    border: 1px;
+    border-radius: 50%;
+    transition: stroke 300s linear;
+} 
+.close-icon {
+    color: currentColor ;
+} 
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    stroke: #FFFFFF;
+    background-color: #404BBF ;
+    border: none;
+} 
+.modal-text {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 16px;
+    align-items: center;
+    color: #2E2F42;
+    width: 260px;
+    margin-bottom: 42px;
+} 
+.form-wrraper-cont {
+    margin-bottom: 18px;
+}
+.modal-form-label {
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: -0.02em;
+    color: #8E8F99;
+    display: block;
+    margin-bottom: 8px;
+}
+.modal-cont-input {
+position: relative;
+}
+.modal-input {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+    padding-left: 68px;
+    outline: none;
+    border-color: #2E2F4266 40% ;
+    transition: border 300ms linear;
+}
+.modal-input:focus,
+.modal-input:hover {
+    border-color: #4D5AE5 ;
+}
+.modal-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    stroke: #2E2F42;
+}
+.modal-input:focus+.modal-icon {
+    stroke: #4D5AE5;
+}
+.form-wrraper-cont-comment {
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: -0.02em;
+    color: rgba(64, 64, 64, 0.3);
+    margin-bottom: 18px;
+
+}
+.modal-form-label-comment {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: -0.02em;
+    color: #8E8F99;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.modal-textarea {
+    width: 360px;
+    height: 120px;
+    border-radius: 4px;
+    padding: 22px 24px 93px 24px ;
+    resize: none;
+    outline: none;
+
+}
+.modal-textarea::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: -0.02em;
+    color: rgba(64, 64, 64, 0.3);
+}
+.modal-cont-checkbox {
+    margin-bottom: 40px;
+}
+.custom-checkbox {
+    width:16px;
+    height:16px;
+    border-radius:2px;
+    border: 1px solid rgba(17, 17, 17, 0.14);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+}
+.custom-label-user-checkbox {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 12;
+    line-height: 16px;
+    letter-spacing: -0.02em;
+    color: #757575;
+}
+.privacy-policy {
+    text-decoration: underline;
+    color: #4D5AE5;
+}
+.checkbox:checked + .custom-label-user-checkbox > .custom-checkbox {
+    border-color: transparent;
+    background-color: #404BBF ;
+}
+.modal-submit {
+    font-family: "Roboto";
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #4D5AE5 ;
+    border-radius: 4px;
+    padding: 14px, 40px;
+    min-width: 169px;
+    height: 56px;
+    border:none;
+}
