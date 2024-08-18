@@ -829,6 +829,9 @@ position: relative;
     text-decoration: underline;
     color: #4D5AE5;
 }
+:root {
+    --checked-icon-color: #F4F4FD; /* Задайте колір для іконки */
+}
 .checkbox:checked + .custom-label-user-checkbox > .custom-checkbox {
     border-color: transparent;
     border: none; 
