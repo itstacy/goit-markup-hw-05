@@ -222,8 +222,8 @@ img {
 .container {
     margin-left: 156px;
     width: 1158px;
-    margin-top: 0 auto;
     padding: 0 15px;
+    margin: 0 auto;
 }
 .list {
     display: flex;
@@ -566,6 +566,7 @@ img {
 .social-media-list {
     display: flex; /* Размещение элементов по горизонтали */
     gap: 16px; /* Расстояние между элементами списка */
+    margin-right: 80px;
 }
 /* Элемент списка социальных медиа */
 .social-media-item {
@@ -855,4 +856,5 @@ position: relative;
     border:none;
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin: 0 auto;
 }
